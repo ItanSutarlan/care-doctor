@@ -48,7 +48,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 - Endpoint: `/hospitals/{hospitalId}/doctors/filter`
 - Method: GET
 - Query Parameters:
-  - `specialization`: Specialization name
+  - `specialization_id`: List of specialization Ids
   - `day`: Practice day
   - `start_time`: Practice start time in the format "HH:mm"
   - `end_time`: Practice end time in the format "HH:mm"
@@ -59,7 +59,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 ### 5. Get Doctor's Practice Schedules
 
 - <img src="./screenshots/doctor_schedule.jpg" alt="doctor schedules" width="200">
-- Endpoint: `/hospitals/{hospitalId}/doctors/{doctorId}/schedules`
+- Endpoint: `/hospitals/{hospitalId}/doctors/{doctorId}/time-slots`
 - Method: GET
 - Query Parameters:
   - `start_date`: Start date in the format "YYYY-MM-DD"
@@ -83,7 +83,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 ### 8. Get Detailed Booking Information
 
 - <img src="./screenshots/detail_booking.jpg" alt="booking detail" width="200">
-- Endpoint: `/bookings/{booking_id}`
+- Endpoint: `/bookings/{bookingId}`
 - Method: GET
 - Description: Get detailed information about a specific booking ID.
 
