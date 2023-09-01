@@ -4,7 +4,7 @@ Welcome to the API documentation for the Care Doctor Application. This guide out
 
 ## Authentication
 
-All endpoints in this API require bearer authentication. 
+All Endpoints inside /users and /bookings in this API require bearer authentication so you need to register and login first to access them. 
 
 ```plaintext
 Authorization: Bearer YOUR_ACCESS_TOKEN
